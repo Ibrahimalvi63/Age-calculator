@@ -9,15 +9,15 @@ function getDaysInMonth(year, month) {
 }
 
 function calculateAge() {
-  const recentDate = new Date();
-  const recentYear = recentDate.getFullYear();
-  const recentMonth = recentDate.getMonth() + 1;
-  const recentDay = recentDate.getDate();
+  let recentDate = new Date();
+  let recentYear = recentDate.getFullYear();
+  let recentMonth = recentDate.getMonth() + 1;
+  let recentDay = recentDate.getDate();
 
-  const birthDate = new Date(inputDate.value);
-  const birthYear = birthDate.getFullYear();
-  const birthMonth = birthDate.getMonth() + 1;
-  const birthDay = birthDate.getDate();
+  let birthDate = new Date(inputDate.value);
+  let birthYear = birthDate.getFullYear();
+  let birthMonth = birthDate.getMonth() + 1;
+  let birthDay = birthDate.getDate();
 
   let ageYear, ageMonth, ageDay;
   ageYear = recentYear - birthYear;
